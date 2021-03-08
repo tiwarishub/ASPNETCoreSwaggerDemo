@@ -33,7 +33,7 @@ env:
   SWASHBUCLE_ASPNET_CORE_CLI_PACKAGE_VERSION: 5.6.3  ### is these variables can be automated
   SWASHBUCKLE_DOTNET_CORE_VERSION: 3.1.x   ## is this can be automated
   API_IMPORT_SPECIFICATION_PATH: ./ASPNETCoreSwaggerDemo/published/swagger.json  ##  swagger path, is it mandatory 
-  API_IMPORT_DLL: ./ASPNETCoreSwaggerDemo/bin/Release/netcoreapp3.1/TodoApi.dll  ## Repo analysis, we 
+  API_IMPORT_DLL: ./ASPNETCoreSwaggerDemo/bin/Release/netcoreapp2.0/ASPNETCoreSwaggerDemo.dll  ## Repo analysis, we 
   API_IMPORT_VERSION: v1
   CONFIGURATION: Release # configurable ?
   DOTNET_CORE_VERSION: 2.0.x
