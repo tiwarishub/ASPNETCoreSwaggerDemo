@@ -30,7 +30,7 @@ env:
   AZURE_APIM_SERVICENAME: tiwarishubAPIMInstance
   AZURE_APIM_API_ID: myAPIInstance
   AZURE_APIM_APPSERVICEURL: https://aatiwarishub-linux-netcore.azurewebsites.net   ## webappname , can it be customized
-  SWASHBUCLE_ASPNET_CORE_CLI_PACKAGE_VERSION: 1.1.0  ### is these variables can be automated
+  SWASHBUCLE_ASPNET_CORE_CLI_PACKAGE_VERSION: 5.6.3  ### is these variables can be automated
   SWASHBUCKLE_DOTNET_CORE_VERSION: 3.1.x   ## is this can be automated
   API_IMPORT_SPECIFICATION_PATH: ./ASPNETCoreSwaggerDemo/published/swagger.json  ##  swagger path, is it mandatory 
   API_IMPORT_DLL: ./ASPNETCoreSwaggerDemo/bin/Release/netcoreapp2.0/ASPNETCoreSwaggerDemo.dll  ## Repo analysis, we 
