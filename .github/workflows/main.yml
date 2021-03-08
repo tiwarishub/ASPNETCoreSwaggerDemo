@@ -51,11 +51,6 @@ jobs:
       with:
         dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
 
-    - name: Setup SwashBuckle .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-          dotnet-version: ${{ env.SWASHBUCKLE_DOTNET_CORE_VERSION }}
-
     - name: Restore
       run: dotnet restore ${{ env.WORKING_DIRECTORY }}
 
@@ -81,6 +76,11 @@ jobs:
       with:
         creds: ${{ env.AZURE_APIM_SERVICE_PRINCIPAL }}
 
+    - name: Setup SwashBuckle .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+          dotnet-version: ${{ env.SWASHBUCKLE_DOTNET_CORE_VERSION }}
+      
     - name: Install Swashbuckle CLI .NET Global Tool
       run: dotnet tool install --global Swashbuckle.AspNetCore.Cli --version ${{ env.SWASHBUCLE_ASPNET_CORE_CLI_PACKAGE_VERSION }}
 
