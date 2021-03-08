@@ -54,12 +54,12 @@ namespace ASPNETCoreSwaggerDemo
 
             app.UseMvc();
             app.UseSwagger();
-            app.UseSwaggerUI(c =>
+          /*  app.UseSwaggerUI(c =>
             {
                 c.DocumentTitle("My API UI");
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
                 c.SwaggerEndpoint("/swagger/v2/swagger.json", "My API V2");
-            });
+            }); */
         }
 
         private string GetXmlCommentsPath()
